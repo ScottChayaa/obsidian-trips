@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="660" viewBox="0 0 840 660" font-family="'Microsoft JhengHei','Noto Sans TC','PingFang TC',sans-serif">
+  <title>重慶段移動路線示意圖</title>
+  <defs>
+    <marker id="arrowRed2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#d12f2f"/>
+    </marker>
+    <marker id="arrowGray2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#8a8a8a"/>
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="840" height="660" fill="#f6f4ec"/>
+  <ellipse cx="300" cy="300" rx="240" ry="200" fill="#e7ecdd" opacity="0.7"/>
+  <ellipse cx="600" cy="430" rx="230" ry="170" fill="#e3eadf" opacity="0.6"/>
+  <text x="40" y="46" font-size="30" font-weight="bold" fill="#333">重慶段移動路線示意圖</text>
+  <text x="42" y="72" font-size="14" fill="#777">示意圖（非按實際地理比例）｜紅線＝行車路線＋距離／時間</text>
+
+  <!-- ========== 路線 ========== -->
+  <!-- Day6 重慶市區→武隆天生三橋 -->
+  <line x1="320" y1="130" x2="240" y2="330" stroke="#d12f2f" stroke-width="3.5" marker-end="url(#arrowRed2)"/>
+  <!-- 天生三橋→仙女山 -->
+  <line x1="240" y1="330" x2="140" y2="300" stroke="#d12f2f" stroke-width="3.5" marker-end="url(#arrowRed2)"/>
+  <!-- Day7 武隆→蚩尤九黎城 -->
+  <line x1="240" y1="330" x2="430" y2="430" stroke="#d12f2f" stroke-width="3.5" marker-end="url(#arrowRed2)"/>
+  <!-- 九黎城→烏江畫廊 -->
+  <line x1="430" y1="430" x2="650" y2="470" stroke="#d12f2f" stroke-width="3.5" marker-end="url(#arrowRed2)"/>
+  <!-- 烏江畫廊→重慶市區(回程虛線) -->
+  <line x1="650" y1="470" x2="320" y2="130" stroke="#d12f2f" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#arrowRed2)"/>
+  <!-- Day9 重慶市區→江北機場 -->
+  <line x1="320" y1="130" x2="470" y2="100" stroke="#8a8a8a" stroke-width="3" marker-end="url(#arrowGray2)"/>
+
+  <!-- ========== 距離/時間標籤 ========== -->
+  <!-- 重慶→武隆 -->
+  <g>
+    <rect x="176" y="196" width="192" height="42" rx="6" fill="#ffffff" stroke="#d12f2f" stroke-width="1.5"/>
+    <text x="186" y="213" font-size="13" font-weight="bold" fill="#d12f2f">Day6 重慶→武隆</text>
+    <text x="186" y="230" font-size="12" fill="#444">180km｜自駕2.5-3h（高鐵1h+接駁）</text>
+  </g>
+  <!-- 天生三橋→仙女山 -->
+  <g>
+    <rect x="102" y="268" width="128" height="24" rx="6" fill="#ffffff" stroke="#d12f2f" stroke-width="1.2"/>
+    <text x="112" y="284" font-size="12" fill="#444">25-30km｜40m-1h</text>
+  </g>
+  <!-- 武隆→九黎城 -->
+  <g>
+    <rect x="262" y="352" width="170" height="42" rx="6" fill="#ffffff" stroke="#d12f2f" stroke-width="1.5"/>
+    <text x="272" y="369" font-size="13" font-weight="bold" fill="#d12f2f">Day7 武隆→九黎城</text>
+    <text x="272" y="386" font-size="12" fill="#444">55-70km｜1h-1h20m</text>
+  </g>
+  <!-- 九黎城→烏江畫廊 -->
+  <g>
+    <rect x="474" y="452" width="132" height="24" rx="6" fill="#ffffff" stroke="#d12f2f" stroke-width="1.2"/>
+    <text x="484" y="468" font-size="12" fill="#444">60km｜1h-1h20m</text>
+  </g>
+  <!-- 烏江畫廊→重慶(回程) -->
+  <g>
+    <rect x="418" y="268" width="150" height="42" rx="6" fill="#ffffff" stroke="#d12f2f" stroke-width="1.5"/>
+    <text x="428" y="285" font-size="13" font-weight="bold" fill="#d12f2f">回程→重慶市區</text>
+    <text x="428" y="302" font-size="12" fill="#444">180km｜約2.5h</text>
+  </g>
+  <!-- 重慶→江北機場 -->
+  <g>
+    <rect x="352" y="84" width="108" height="24" rx="6" fill="#ffffff" stroke="#8a8a8a" stroke-width="1.2"/>
+    <text x="362" y="100" font-size="12" fill="#666">Day9 30-40m</text>
+  </g>
+
+  <!-- ========== 城市節點 ========== -->
+  <!-- 重慶市區 -->
+  <circle cx="320" cy="130" r="9" fill="#d12f2f" stroke="#fff" stroke-width="2"/>
+  <text x="272" y="118" font-size="16" font-weight="bold" fill="#333">重慶市區</text>
+  <!-- 江北機場 -->
+  <circle cx="470" cy="100" r="6" fill="#fff" stroke="#8a8a8a" stroke-width="2.5"/>
+  <text x="476" y="78" font-size="13" font-weight="bold" fill="#666">江北T3機場</text>
+  <!-- 武隆天生三橋 -->
+  <circle cx="240" cy="330" r="7" fill="#fff" stroke="#d12f2f" stroke-width="2.5"/>
+  <text x="104" y="330" font-size="14" font-weight="bold" fill="#333">武隆·天生三橋</text>
+  <!-- 仙女山 -->
+  <circle cx="140" cy="300" r="7" fill="#fff" stroke="#d12f2f" stroke-width="2.5"/>
+  <text x="82" y="236" font-size="14" font-weight="bold" fill="#333">仙女山</text>
+  <!-- 蚩尤九黎城 -->
+  <circle cx="430" cy="430" r="7" fill="#fff" stroke="#d12f2f" stroke-width="2.5"/>
+  <text x="386" y="420" font-size="14" font-weight="bold" fill="#333">蚩尤九黎城</text>
+  <!-- 烏江畫廊 -->
+  <circle cx="650" cy="470" r="7" fill="#fff" stroke="#d12f2f" stroke-width="2.5"/>
+  <text x="652" y="496" font-size="14" font-weight="bold" fill="#333">烏江畫廊</text>
+
+  <!-- Day8 市區景點註記 -->
+  <g transform="translate(560,72)">
+    <rect width="250" height="86" rx="8" fill="#fdf4e3" stroke="#c98a2a" stroke-width="1.5"/>
+    <text x="14" y="24" font-size="13" font-weight="bold" fill="#9a6a1c">Day8 重慶市區經典遊（市內車程各約20-40m）</text>
+    <text x="14" y="48" font-size="12" fill="#555">磁器口古鎮 → 李子壩輕軌穿樓</text>
+    <text x="14" y="68" font-size="12" fill="#555">→ 解放碑 → 洪崖洞・千廝門大橋</text>
+  </g>
+
+  <!-- 圖例 -->
+  <g transform="translate(40,600)">
+    <line x1="0" y1="8" x2="40" y2="8" stroke="#d12f2f" stroke-width="3"/>
+    <text x="48" y="13" font-size="12" fill="#444">行車路線（Day6-7）</text>
+    <line x1="190" y1="8" x2="230" y2="8" stroke="#d12f2f" stroke-width="3" stroke-dasharray="8 6"/>
+    <text x="238" y="13" font-size="12" fill="#444">回程</text>
+    <line x1="330" y1="8" x2="370" y2="8" stroke="#8a8a8a" stroke-width="3"/>
+    <text x="378" y="13" font-size="12" fill="#666">市區⇄機場</text>
+  </g>
+</svg>

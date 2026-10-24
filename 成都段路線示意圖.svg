@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="660" viewBox="0 0 840 660" font-family="'Microsoft JhengHei','Noto Sans TC','PingFang TC',sans-serif">
+  <title>成都段移動路線示意圖</title>
+  <defs>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#d12f2f"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#8a8a8a"/>
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="840" height="660" fill="#f6f4ec"/>
+  <ellipse cx="240" cy="220" rx="200" ry="160" fill="#e7ecdd" opacity="0.7"/>
+  <ellipse cx="560" cy="380" rx="250" ry="190" fill="#e3eadf" opacity="0.6"/>
+  <text x="40" y="46" font-size="30" font-weight="bold" fill="#333">成都段移動路線示意圖</text>
+  <text x="42" y="72" font-size="14" fill="#777">示意圖（非按實際地理比例）｜紅線＝行車路線＋距離／時間</text>
+
+  <!-- ========== 路線 ========== -->
+  <!-- Day2 成都→都江堰 -->
+  <line x1="500" y1="360" x2="320" y2="140" stroke="#d12f2f" stroke-width="3.5" marker-end="url(#arrowRed)"/>
+  <!-- 都江堰→青城山 -->
+  <line x1="320" y1="140" x2="240" y2="190" stroke="#d12f2f" stroke-width="3.5" marker-end="url(#arrowRed)"/>
+  <!-- 青城山→成都 回程(虛線) -->
+  <line x1="240" y1="190" x2="500" y2="360" stroke="#d12f2f" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#arrowRed)"/>
+  <!-- Day3 成都→峨眉山 -->
+  <line x1="500" y1="360" x2="200" y2="520" stroke="#d12f2f" stroke-width="3.5" marker-end="url(#arrowRed)"/>
+  <!-- Day4 峨眉山→樂山 -->
+  <line x1="200" y1="520" x2="380" y2="470" stroke="#d12f2f" stroke-width="3.5" marker-end="url(#arrowRed)"/>
+  <!-- Day4 樂山→成都 -->
+  <line x1="380" y1="470" x2="500" y2="360" stroke="#d12f2f" stroke-width="3.5" marker-end="url(#arrowRed)"/>
+  <!-- Day5 成都→重慶(灰, 後續段) -->
+  <line x1="500" y1="360" x2="800" y2="330" stroke="#8a8a8a" stroke-width="3" stroke-dasharray="10 7" marker-end="url(#arrowGray)"/>
+
+  <!-- ========== 距離/時間標籤 ========== -->
+  <!-- 成都→都江堰 -->
+  <g>
+    <rect x="340" y="200" width="170" height="42" rx="6" fill="#ffffff" stroke="#d12f2f" stroke-width="1.5"/>
+    <text x="350" y="217" font-size="13" font-weight="bold" fill="#d12f2f">Day2 成都→都江堰</text>
+    <text x="350" y="234" font-size="12" fill="#444">60km｜自駕約1h10m（動車30m）</text>
+  </g>
+  <!-- 都江堰→青城山 -->
+  <g>
+    <rect x="248" y="118" width="120" height="24" rx="6" fill="#ffffff" stroke="#d12f2f" stroke-width="1.2"/>
+    <text x="258" y="134" font-size="12" fill="#444">15km｜約25m</text>
+  </g>
+  <!-- 青城山→成都 回程 -->
+  <g>
+    <rect x="336" y="252" width="150" height="24" rx="6" fill="#ffffff" stroke="#d12f2f" stroke-width="1.2"/>
+    <text x="346" y="268" font-size="12" fill="#444">回程 約1h20m</text>
+  </g>
+  <!-- 成都→峨眉山 -->
+  <g>
+    <rect x="268" y="428" width="190" height="42" rx="6" fill="#ffffff" stroke="#d12f2f" stroke-width="1.5"/>
+    <text x="278" y="445" font-size="13" font-weight="bold" fill="#d12f2f">Day3 成都→峨眉山</text>
+    <text x="278" y="462" font-size="12" fill="#444">160km｜動車1h10m／自駕2h</text>
+  </g>
+  <!-- 峨眉山→樂山 -->
+  <g>
+    <rect x="222" y="512" width="130" height="24" rx="6" fill="#ffffff" stroke="#d12f2f" stroke-width="1.2"/>
+    <text x="232" y="528" font-size="12" fill="#444">40km｜45m-1h</text>
+  </g>
+  <!-- 樂山→成都 -->
+  <g>
+    <rect x="398" y="424" width="120" height="24" rx="6" fill="#ffffff" stroke="#d12f2f" stroke-width="1.2"/>
+    <text x="408" y="440" font-size="12" fill="#444">147km｜約2h</text>
+  </g>
+  <!-- 成都→重慶 -->
+  <g>
+    <rect x="590" y="308" width="180" height="42" rx="6" fill="#ffffff" stroke="#8a8a8a" stroke-width="1.5"/>
+    <text x="600" y="325" font-size="13" font-weight="bold" fill="#666">Day5 成都→重慶</text>
+    <text x="600" y="342" font-size="12" fill="#666">高鐵 約1h15m</text>
+  </g>
+
+  <!-- ========== 城市節點 ========== -->
+  <!-- 成都 -->
+  <circle cx="500" cy="360" r="9" fill="#d12f2f" stroke="#fff" stroke-width="2"/>
+  <text x="508" y="352" font-size="16" font-weight="bold" fill="#333">成都</text>
+  <!-- 都江堰 -->
+  <circle cx="320" cy="140" r="7" fill="#fff" stroke="#d12f2f" stroke-width="2.5"/>
+  <text x="300" y="128" font-size="14" font-weight="bold" fill="#333">都江堰</text>
+  <!-- 青城山 -->
+  <circle cx="240" cy="190" r="7" fill="#fff" stroke="#d12f2f" stroke-width="2.5"/>
+  <text x="216" y="178" font-size="14" font-weight="bold" fill="#333">青城山</text>
+  <!-- 峨眉山 -->
+  <circle cx="200" cy="520" r="7" fill="#fff" stroke="#d12f2f" stroke-width="2.5"/>
+  <text x="140" y="548" font-size="14" font-weight="bold" fill="#333">峨眉山</text>
+  <!-- 樂山大佛 -->
+  <circle cx="380" cy="470" r="7" fill="#fff" stroke="#d12f2f" stroke-width="2.5"/>
+  <text x="388" y="492" font-size="14" font-weight="bold" fill="#333">樂山大佛</text>
+  <!-- 重慶 -->
+  <circle cx="800" cy="330" r="8" fill="#8a8a8a" stroke="#fff" stroke-width="2"/>
+  <text x="780" y="312" font-size="14" font-weight="bold" fill="#666">重慶</text>
+
+  <!-- 圖例 -->
+  <g transform="translate(40,600)">
+    <line x1="0" y1="8" x2="40" y2="8" stroke="#d12f2f" stroke-width="3"/>
+    <text x="48" y="13" font-size="12" fill="#444">行車路線（Day2-4 成都周邊）</text>
+    <line x1="210" y1="8" x2="250" y2="8" stroke="#d12f2f" stroke-width="3" stroke-dasharray="7 5"/>
+    <text x="258" y="13" font-size="12" fill="#444">回程</text>
+    <line x1="340" y1="8" x2="380" y2="8" stroke="#8a8a8a" stroke-width="3" stroke-dasharray="9 6"/>
+    <text x="388" y="13" font-size="12" fill="#666">後續段（成都→重慶）</text>
+  </g>
+</svg>
